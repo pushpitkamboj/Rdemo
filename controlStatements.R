@@ -19,3 +19,52 @@ b <- c(10, 20,3)
 d = a + b
 d
 a > 2
+
+if (3 > 1) {
+  y <- 3
+  y
+} else {
+  y <- 1
+  y
+}
+
+
+x <- c(1, 2, 4)
+k <- list(
+  vec <- c(1,2,3) ,
+  rec <- c(7,8,9)
+)
+#for loop syntax 1
+for (i in 1: 2) {
+  print(k[i])
+}
+#syntax 2
+for (i in seq_along(x)) {
+  print(x[i])
+}
+
+#while loops
+count <- 1
+while (count < 5) {
+  count <- count + 1
+  print(count)
+  
+} #SAME LOGIC WITH FOR LOOP
+for (i in 1 : 5) {
+  count <- count + 1
+  print(count)
+}
+
+#REPEAT IS SIMILAR TO WHILE (1)
+x <- -1
+while (1) {
+  if (x == 1){
+    print("the loop will break")
+    break
+    }
+  else print("it is still going")
+  
+  x <- x + 1
+}
+
+#NEXT IS SAME AS CONTINUE IN C++
